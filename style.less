@@ -1,0 +1,54 @@
+body {
+	max-width: 1200px;
+	margin: 1em;
+	background-color: #024;
+	font-family: arial;
+}
+#interface {
+	display: flex;
+	flex-direction: column;
+	background-color: #246;
+	padding: 1em;
+	align-items: stretch;
+	border-radius: 1em;
+	& > * {
+		flex: 1 0 0px;
+		background-color: #DEF;
+		margin: .5em;
+		padding: 1em;
+	}
+}
+fieldset {
+	border: #369 solid 1px;
+	border-radius: .5em;
+	background-color: rgba(0, 0, 0, .05);
+}
+legend {
+	color: #369;
+}
+div >label {
+	display: inline-block;
+	width: 11em;
+	text-align: right;
+}
+form {
+	flex: 0 0 540px;
+	min-width: 540px;
+}
+textarea {
+	min-height: 20em;
+	zwhite-space: nowrap;
+	overflow: auto;
+}
+h1 {
+	color: #DEF;
+	text-align: center;
+}
+@media all and (min-width: 1200px) {
+	body {
+		margin: 0 auto;
+	}
+	#interface {
+		flex-direction: row;
+	}
+}
